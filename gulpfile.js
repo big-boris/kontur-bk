@@ -22,7 +22,7 @@ gulp.task('pug_chunks', function(){
     .pipe(pug({
         pretty: '  '
     }))
-    .pipe(gulp.dest('builds/chunks-html/'))
+    .pipe(gulp.dest('builds/dev/chunks-html/'))
 });
 
 gulp.task('sass', function () {

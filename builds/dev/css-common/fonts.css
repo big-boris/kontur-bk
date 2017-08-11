@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("../fonts/avenir-next-cyr_light/font.eot");
+  src: url("../fonts/avenir-next-cyr_light/font.eot?#iefix")format("embedded-opentype"),
+     url("../fonts/avenir-next-cyr_light/font.woff2") format("woff2"),
+     url("../fonts/avenir-next-cyr_light/font.woff") format("woff"),
+     url("../fonts/avenir-next-cyr_light/font.ttf") format("truetype"),
+     url("../fonts/avenir-next-cyr_light/font.svg#AvenirNextCyr-Light") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("../fonts/avenir-next-cyr_regular/font.eot");
+  src: url("../fonts/avenir-next-cyr_regular/font.eot?#iefix")format("embedded-opentype"),
+     url("../fonts/avenir-next-cyr_regular/font.woff2") format("woff2"),
+     url("../fonts/avenir-next-cyr_regular/font.woff") format("woff"),
+     url("../fonts/avenir-next-cyr_regular/font.ttf") format("truetype"),
+     url("../fonts/avenir-next-cyr_regular/font.svg#AvenirNextCyr-Medium") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("../fonts/avenir-next-cyr_medium/font.eot");
+  src: url("../fonts/avenir-next-cyr_medium/font.eot?#iefix")format("embedded-opentype"),
+     url("../fonts/avenir-next-cyr_medium/font.woff2") format("woff2"),
+     url("../fonts/avenir-next-cyr_medium/font.woff") format("woff"),
+     url("../fonts/avenir-next-cyr_medium/font.ttf") format("truetype"),
+     url("../fonts/avenir-next-cyr_medium/font.svg#AvenirNextCyr-Regular") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'DINPro';
+  src: url("../fonts/dinpro_light/font.eot");
+  src: url("../fonts/dinpro_light/font.eot?#iefix")format("embedded-opentype"),
+     url("../fonts/dinpro_light/font.woff2") format("woff2"),
+     url("../fonts/dinpro_light/font.woff") format("woff"),
+     url("../fonts/dinpro_light/font.ttf") format("truetype"),
+     url("../fonts/dinpro_light/font.svg#DINPro-Light") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'DINPro';
+  src: url("../fonts/dinpro_bold/font.eot");
+  src: url("../fonts/dinpro_bold/font.eot?#iefix")format("embedded-opentype"),
+     url("../fonts/dinpro_bold/font.woff2") format("woff2"),
+     url("../fonts/dinpro_bold/font.woff") format("woff"),
+     url("../fonts/dinpro_bold/font.ttf") format("truetype"),
+     url("../fonts/dinpro_bold/font.svg#DINPro-Bold") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'icon-font';
+  src: url('../fonts/icon-font/icon-font.eot');
+  src: url('../fonts/icon-font/icon-font.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/icon-font/icon-font.woff2') format('woff2'),
+       url('../fonts/icon-font/icon-font.woff') format('woff'),
+       url('../fonts/icon-font/icon-font.ttf') format('truetype'),
+       url('../fonts/icon-font/icon-font.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
