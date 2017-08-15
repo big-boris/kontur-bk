@@ -1,5 +1,6 @@
 // variables
 $maincolor: #a22fa2;
+$maincolor_hover: #E388D4;
 $maincolor_lighter: #ff4aff;
 $maincolor_lighter2: #e543e5;
 $black: #000000;
@@ -7,6 +8,7 @@ $white: #ffffff;
 $textcolor: #222222;
 $invalidcolor: #f45a57;
 $body-bgcolor: #fafafa;
+$stocks-bgcolor: #eff0f0;
 $border-black_thin: 1px solid #000;
 $border-gray_thin: 1px solid rgba(255, 255, 255, .2);
 $scopesico-border: 3px solid $maincolor;
@@ -20,6 +22,12 @@ $transition-value: all .3s ease;
      -moz-box-shadow: $shadow-gray;
       -ms-box-shadow: $shadow-gray;
           box-shadow: $shadow-gray;
+}
+@mixin shadowmain_hover {
+  -webkit-box-shadow: $shadow-gray_hover;
+     -moz-box-shadow: $shadow-gray_hover;
+      -ms-box-shadow: $shadow-gray_hover;
+          box-shadow: $shadow-gray_hover;
 }
 @mixin transition {
   -webkit-transition: $transition-value;

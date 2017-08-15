@@ -1,0 +1,69 @@
+.connect {}
+.connect__header {
+  opacity: 0;
+  -webkit-animation: connect 1s ease .25s forwards;
+       -o-animation: connect 1s ease .25s forwards;
+          animation: connect 1s ease .25s forwards;
+}
+.connect__form {
+  opacity: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  -webkit-animation: connect 1.25s ease .5s forwards;
+       -o-animation: connect 1.25s ease .5s forwards;
+          animation: connect 1.25s ease .5s forwards;
+}
+@keyframes connect {
+  0% {}
+  100% {
+    opacity: 1;
+  }
+}
+.connect__label {
+  margin: 15px 0;
+  font-size: 27px;
+}
+.connect__tariff {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.connect__options {
+  margin-bottom: 25px;
+}
+.connect__option {
+  display: block;
+  position: relative;
+  padding: 5px 0;
+  padding-right: 65px;
+  cursor: pointer;
+}
+.connect__option_active {}
+.connect__option_active .connect__option-price {
+  opacity: 1;
+}
+.connect__option-text {
+  display: inline-block;
+  width: 90%;
+  vertical-align: top;
+}
+.connect__option-price {
+  opacity: .3;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  @include transition;
+}
+.connect__summary {
+  margin-bottom: 10px;
+  padding: 30px 0;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  font-weight: 300;
+  font-size: 40px;
+}
+.connect__summary-price {}
+.connect__summary-year {
+  font-size: 17px;
+}

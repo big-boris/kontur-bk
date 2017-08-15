@@ -1,0 +1,46 @@
+/* ___________5. FOOTER  (Подвал)______________ */
+.footer {
+  opacity: 0;
+  padding-top: 38px;
+  padding-bottom: 15px;
+  background: $white;
+  -webkit-animation: footer .5s ease .5s forwards;
+  -o-animation: footer .5s ease .5s forwards;
+  animation: footer .5s ease .5s forwards;
+}
+@keyframes footer {
+  0% {}
+  100% {
+    opacity: 1;
+  }
+}
+.footer_attached-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.footer_transparent {
+  background-color: transparent;
+}
+.footer__logo {}
+
+.footer__nav {}
+.footer__phone {
+  margin-bottom: 10px;
+}
+
+.footer__copyright {
+  font-size: 0;
+  text-align: right;
+}
+.footer__copyright-link {
+  display: inline-block;
+  padding: 15px 0;
+  :hover {
+    opacity: .75;
+  }
+}
+.footer__copyright-img {
+  display: block;
+}

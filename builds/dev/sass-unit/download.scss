@@ -1,0 +1,26 @@
+.download {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.download__content {
+  padding-top: 5px;
+  padding-bottom: 50px;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-right: none;
+  border-left: none;
+}
+.download__header {
+  padding: 30px 0;
+  font-size: 27px;
+}
+.download__line {
+  padding: 3px 0;
+  font-size: 0;
+}
+.download__link {
+  display: inline-block;
+  padding: 3px;
+  padding-left: 30px;
+  font-size: 17px;
+  background: url('../img/ico/download.png') 0 50% no-repeat;
+}
