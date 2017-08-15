@@ -1,0 +1,438 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+/* _______________2.1. Заголовки_______________ */
+/* _______________2.2. Ссылки__________________ */
+a {
+  color: #000000;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  a:hover {
+    color: #a22fa2;
+    text-decoration: none; }
+
+a:focus,
+input:focus,
+textarea:focus {
+  outline: 0 none; }
+
+/* _______________2.3. Элементы форм___________ */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  padding: 0 17px;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  font: 600 18px 'Avenir Next Cyr', sans-serif;
+  color: #000;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+::-webkit-input-placeholder {
+  opacity: 1;
+  font-weight: 300;
+  color: #393939; }
+
+::-moz-placeholder {
+  opacity: 1;
+  font-weight: 300;
+  color: #393939; }
+
+:-moz-placeholder {
+  opacity: 1;
+  font-weight: 300;
+  color: #393939; }
+
+:-ms-input-placeholder {
+  opacity: 1;
+  font-weight: 300;
+  color: #393939; }
+
+.form {
+  padding: 30px;
+  background: #f7fafb;
+  color: #000000;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 39px 57px rgba(0, 0, 0, 0.19);
+  -ms-box-shadow: 0 39px 57px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 39px 57px rgba(0, 0, 0, 0.19); }
+
+.form_narrow {
+  margin: 0 auto;
+  max-width: 480px; }
+
+.form__header {
+  margin-bottom: 40px;
+  padding-top: 12px;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: -0.2px;
+  text-align: center; }
+
+.form__description {
+  margin-bottom: 30px; }
+
+.form__line {
+  display: block;
+  margin: 0 -8px; }
+
+.form__line_select {
+  position: relative;
+  z-index: 100; }
+
+.form__line_invalid .form__help {
+  opacity: 1;
+  z-index: auto; }
+
+.form__line_invalid input[type="text"],
+.form__line_invalid input[type="tel"],
+.form__line_invalid input[type="email"],
+.form__line_invalid input[type="password"],
+.form__line_invalid textarea,
+.form__line_invalid .jq-selectbox__select {
+  border-color: #f45a57; }
+
+.form__field {
+  display: block;
+  position: relative;
+  margin-bottom: 16px;
+  padding: 0 8px; }
+
+.form__field_2 {
+  float: left;
+  width: 50%;
+  min-height: 1px; }
+
+.form__help {
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  right: 8px;
+  left: 8px;
+  margin-top: -3px;
+  padding: 0 12px;
+  background: #f45a57;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1.333333;
+  -webkit-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.form__submit {
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 3px;
+  font-size: 19px;
+  text-align: center; }
+
+.form__submit_politic {
+  padding-right: 270px;
+  min-height: 80px; }
+
+.form__politic {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  padding-left: 20px;
+  width: 270px;
+  font-size: 13px;
+  text-align: left; }
+  .form__politic a {
+    text-decoration: underline; }
+
+.form__politic-notariff {
+  padding: 20px 0 0;
+  font-size: 13px;
+  text-align: left; }
+  .form__politic-notariff a {
+    text-decoration: underline; }
+
+/* _______________2.4. Сетка___________________ */
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1305px; }
+
+.container__row {
+  margin: 0 -15px; }
+
+.container__col {
+  float: left;
+  padding: 0 15px;
+  width: 50%;
+  min-height: 1px; }
+
+/* _______________2.5. Базовые_________________ */
+html {
+  font-size: 100%; }
+
+body {
+  background: #fafafa;
+  color: #000;
+  font: 300 106.25%/1.411765 'Avenir Next Cyr', sans-serif; }
+
+.clear {
+  display: block;
+  clear: both; }
+
+.none {
+  display: none; }
+
+img {
+  max-width: 100%; }
+
+.title {
+  font-weight: bold;
+  line-height: 1;
+  font-family: 'DINPro', sans-serif; }
+
+.button {
+  display: inline-block;
+  padding: 15px 50px 19px;
+  text-align: center;
+  font-weight: 600;
+  font-size: inherit;
+  line-height: 1;
+  font-family: 'Avenir Next Cyr', sans-serif;
+  background: #a22fa2;
+  color: #ffffff;
+  border: none;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 20px 43px rgba(178, 108, 18, 0.35);
+  box-shadow: 0 20px 43px rgba(178, 108, 18, 0.35);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .button:hover {
+    background: #ff4aff;
+    color: #ffffff; }
+
+.button_wide {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%; }
+
+/* ___________3. HEADER  (Шапка)_______________ */
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #111623; }
+
+.panel {
+  padding: 13px 0 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+
+.panel__logo {
+  width: 20%; }
+
+.panel__logo-footer {
+  width: 40%; }
+
+.header__logo .logo {
+  color: #ffffff; }
+
+.header__logo .logo__text {
+  border-left-color: rgba(255, 255, 255, 0.2); }
+
+.logo {
+  display: block;
+  padding: 0;
+  font-size: 0; }
+  .logo::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+
+.logo__img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px; }
+
+.logo__text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 4px 0;
+  max-width: 165px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 2.2;
+  letter-spacing: 0.2px;
+  text-transform: uppercase; }
+
+.logo__text-footer {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 4px 0 4px 27px;
+  max-width: 165px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  border-left: 1px solid #000000; }
+
+.panel__nav {
+  text-align: right;
+  width: 65%; }
+
+.panel__nav-footer {
+  text-align: right;
+  width: 43%; }
+
+.header__nav .nav__link {
+  color: #ffffff; }
+
+.nav {
+  font-size: 0; }
+
+.nav__item {
+  display: inline-block; }
+
+.nav__link {
+  display: inline-block;
+  padding: 13px 16px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.4px; }
+
+/** NeProsto Styling IconBurger for menu **/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icon-font";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  margin-right: .2em;
+  font-variant: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-burger:before {
+  content: '\f0c9';
+  font-size: 18px;
+  font-weight: bold; }
+
+/** End NeProsto Styling IconBurger for menu **/
+.panel__phone {
+  width: 15%;
+  text-align: right;
+  border-left: 1px solid rgba(255, 255, 255, 0.2); }
+
+.panel__phone-footer {
+  width: 17%;
+  text-align: right;
+  border-left: 1px solid rgba(255, 255, 255, 0.2); }
+
+.header__phone .phone {
+  color: #ffffff; }
+
+.phone {
+  display: inline-block;
+  padding: 12px 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.5px; }
+
+.phone__code {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -3px;
+  padding: 1px 0;
+  font-size: 14px; }
+
+/** NeProsto Styling SubMenu for Products **/
+.nav__item-sub {
+  position: relative; }
+
+.nav__item-sub:hover > .sub-nav {
+  display: block; }
+
+.sub-nav {
+  display: none;
+  position: absolute;
+  min-width: 295px;
+  top: 37px;
+  left: 10px;
+  padding: 6px 0px;
+  background-color: #ffffff;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  z-index: 5; }
+
+.sub-nav__item {
+  display: block; }
+
+.sub-nav__link {
+  display: inline-block;
+  width: 100%;
+  padding: 12px; }
+  .sub-nav__link:hover {
+    background-color: #e5e5e5; }
+
+.sub-nav__item-ico {
+  display: inline;
+  margin-right: 8px;
+  vertical-align: top; }
+
+.sub-nav__product {
+  display: inline-block;
+  max-width: 230px; }
+
+.sub-nav__product-title {
+  display: block;
+  margin-bottom: 3px;
+  color: #404040;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1; }
+
+.sub-nav__product-desc {
+  display: block;
+  color: #808080;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3; }
+
+/** End NeProsto Styling SubMenu for Products **/
+/* ___________4. SECTION (Контент)_____________ */
+.section {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.section_pushed {
+  padding-top: 85px; }
+
+.section__header {
+  position: relative;
+  padding: 70px 0;
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.2; }

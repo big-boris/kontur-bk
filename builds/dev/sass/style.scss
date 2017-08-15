@@ -1,0 +1,65 @@
+@import "../sass-unit/var-mix";
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  &::before, &::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@import "../sass-unit/link-h";
+
+@import "../sass-unit/form-elements";
+
+@import "../sass-unit/grid-elements";
+
+/* _______________2.5. Базовые_________________ */
+html {
+  font-size: 100%;
+}
+body {
+  background: #fafafa;
+  color: #000;
+  font: 300 106.25%/1.411765 'Avenir Next Cyr', sans-serif;
+}
+.clear {
+  display: block;
+  clear: both;
+}
+.none {
+  display: none;
+}
+p {}
+img {
+  max-width: 100%;
+}
+.title {
+  font-weight: bold;
+  line-height: 1;
+  font-family: 'DINPro', sans-serif;
+}
+
+@import "../sass-unit/button";
+
+@import "../sass-unit/header-nav";
+
+/* ___________4. SECTION (Контент)_____________ */
+.section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.section_pushed {
+  padding-top: 85px;
+}
+.section__header {
+  position: relative;
+  padding: 70px 0;
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.2;
+}
+

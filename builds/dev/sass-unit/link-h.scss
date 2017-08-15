@@ -1,0 +1,20 @@
+/* _______________2.1. Заголовки_______________ */
+h1 {}
+h2 {}
+h3 {}
+
+/* _______________2.2. Ссылки__________________ */
+a {
+  color: $black;
+  text-decoration: none;
+  @include transition;
+  &:hover {
+    color: $maincolor;
+    text-decoration: none;
+  }
+}
+a:focus,
+input:focus,
+textarea:focus {
+  outline: 0 none;
+}

@@ -1,0 +1,193 @@
+/* ___________3. HEADER  (Шапка)_______________ */
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #111623;
+}
+.panel {
+  padding: 13px 0 15px;
+  border-bottom: $border-gray_thin;
+}
+.panel__logo {
+  width: 20%;
+}
+.panel__logo-footer {
+  width: 40%;
+}
+.header__logo {}
+.header__logo .logo {
+  color: $white;
+}
+.header__logo .logo__text {
+  border-left-color: rgba(255, 255, 255, .2)
+}
+.logo {
+  display: block;
+  padding: 0;
+  font-size: 0;
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+.logo__img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+.logo__text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 4px 0;
+  max-width: 165px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 2.2;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+.logo__text-footer {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 4px 0 4px 27px;
+  max-width: 165px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  border-left: 1px solid $black;
+}
+
+.panel__nav {
+  text-align: right;
+  width: 65%;
+}
+.panel__nav-footer {
+  text-align: right;
+  width: 43%;
+}
+.header__nav {}
+.header__nav .nav__link {
+  color: $white;
+}
+.nav {
+  font-size: 0;
+}
+.nav__item {
+  display: inline-block;
+}
+.nav__link {
+  display: inline-block;
+  padding: 13px 16px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.4px;
+}
+/** NeProsto Styling IconBurger for menu **/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "icon-font";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    margin-right: .2em;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-burger:before {
+  content: '\f0c9';
+  font-size: 18px;
+  font-weight: bold;
+}
+/** End NeProsto Styling IconBurger for menu **/
+
+.panel__phone {
+  width: 15%;
+  text-align: right;
+  border-left: $border-gray_thin;
+}
+.panel__phone-footer {
+  width: 17%;
+  text-align: right;
+  border-left: $border-gray_thin;
+}
+.header__phone {}
+.header__phone .phone {
+  color: $white;
+}
+.phone {
+  display: inline-block;
+  padding: 12px 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.5px;
+}
+.phone__code {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -3px;
+  padding: 1px 0;
+  font-size: 14px;
+}
+
+/** NeProsto Styling SubMenu for Products **/
+.nav__item-sub {
+  position: relative;
+}
+.nav__item-sub:hover >.sub-nav {
+  display: block;
+}
+.sub-nav {
+  display: none;
+  position: absolute;
+  min-width: 295px;
+  top: 37px;
+  left: 10px;
+  padding: 6px 0px;
+  background-color: $white;
+  border-radius: 2px;
+  box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  z-index: 5;
+}
+.sub-nav__item {
+  display: block;
+}
+.sub-nav__link {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  &:hover {
+    background-color: #e5e5e5;
+  }
+}
+.sub-nav__item-ico {
+  display: inline;
+  margin-right: 8px;
+  vertical-align: top;
+}
+.sub-nav__product {
+  display: inline-block;
+  max-width: 230px;
+}
+.sub-nav__product-title {
+  display: block;
+  margin-bottom: 3px;
+  color: #404040;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+}
+.sub-nav__product-desc {
+  display: block;
+  color: #808080;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+} /** End NeProsto Styling SubMenu for Products **/

@@ -1,0 +1,33 @@
+// variables
+$maincolor: #a22fa2;
+$maincolor_lighter: #ff4aff;
+$maincolor_lighter2: #e543e5;
+$black: #000000;
+$white: #ffffff;
+$textcolor: #222222;
+$invalidcolor: #f45a57;
+$body-bgcolor: #fafafa;
+$border-black_thin: 1px solid #000;
+$border-gray_thin: 1px solid rgba(255, 255, 255, .2);
+$scopesico-border: 3px solid $maincolor;
+$shadow-gray: 0 39px 57px rgba(0,0,0,.19);
+$shadow-gray_hover: 0 49px 57px rgba(0,0,0,.53);
+$transition-value: all .3s ease;
+
+// mixins
+@mixin shadowmain {
+  -webkit-box-shadow: $shadow-gray;
+     -moz-box-shadow: $shadow-gray;
+      -ms-box-shadow: $shadow-gray;
+          box-shadow: $shadow-gray;
+}
+@mixin transition {
+  -webkit-transition: $transition-value;
+       -o-transition: $transition-value;
+          transition: $transition-value;
+}
+@mixin placeholder {
+  opacity: 1;
+  font-weight: 300;
+  color: #393939;
+}

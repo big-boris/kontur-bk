@@ -71,7 +71,7 @@ gulp.task('watch', function() {
   gulp.watch('builds/dev/fonts/**/*', ['fonts']);
   gulp.watch('builds/dev/**/*.pug', ['pug']);
   gulp.watch('builds/dev/chunks-pug/*.pug', ['pug_chunks']);
-  gulp.watch('builds/dev/sass/**/*.scss', ['sass']);
+  gulp.watch('builds/dev/**/*.scss', ['sass']);
 });
 
 gulp.task('default', [
@@ -80,6 +80,7 @@ gulp.task('default', [
   'js',
   'sass',
   'pug',
+  'pug_chunks',
   'webserver',
   'watch'
 ]);

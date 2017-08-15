@@ -1,0 +1,136 @@
+/* _______________2.3. Элементы форм___________ */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  padding: 0 17px;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  font: 600 18px 'Avenir Next Cyr', sans-serif;
+  color: #000;
+  background: transparent;
+  border: 1px solid rgba(0,0,0,.11);
+  border-radius: 3px;
+  @include transition;
+}
+::-webkit-input-placeholder {
+  @include placeholder;
+}
+::-moz-placeholder {
+  @include placeholder;
+}
+:-moz-placeholder {
+  @include placeholder;
+}
+:-ms-input-placeholder {
+  @include placeholder;
+}
+input[type="text"]:hover,
+input[type="password"]:hover {}
+input[type="text"]:focus,
+input[type="password"]:focus {}
+
+.form {
+  padding: 30px;
+  background: #f7fafb;
+  color: $black;
+  border-radius: 3px;
+  @include shadowmain;
+}
+.form_narrow {
+  margin: 0 auto;
+  max-width: 480px;
+}
+.form__header {
+  margin-bottom: 40px;
+  padding-top: 12px;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: -0.2px;
+  text-align: center;
+}
+.form__description {
+  margin-bottom: 30px;
+}
+.form__line {
+  display: block;
+  margin: 0 -8px;
+}
+.form__line_select {
+  position: relative;
+  z-index: 100;
+}
+.form__line_invalid {
+  .form__help {
+    opacity: 1;
+    z-index: auto;
+  }
+}
+.form__line_invalid input[type="text"],
+.form__line_invalid input[type="tel"],
+.form__line_invalid input[type="email"],
+.form__line_invalid input[type="password"],
+.form__line_invalid textarea,
+.form__line_invalid .jq-selectbox__select {
+  border-color: $invalidcolor;
+}
+.form__field {
+  display: block;
+  position: relative;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.form__field_2 {
+  float: left;
+  width: 50%;
+  min-height: 1px;
+}
+.form__help {
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  right: 8px;
+  left: 8px;
+  margin-top: -3px;
+  padding: 0 12px;
+  background: $invalidcolor;
+  color: $white;
+  font-size: 12px;
+  line-height: 1.333333;
+  border-radius: 0 0 3px 3px;
+  @include transition;
+}
+.form__submit {
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 3px;
+  font-size: 19px;
+  text-align: center;
+}
+.form__submit_politic {
+  padding-right: 270px;
+  min-height: 80px;
+}
+.form__politic {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  padding-left: 20px;
+  width: 270px;
+  font-size: 13px;
+  text-align: left;
+  a {
+    text-decoration: underline;
+  }
+}
+.form__politic-notariff {
+  padding: 20px 0 0;
+  font-size: 13px;
+  text-align: left;
+  a {
+    text-decoration: underline;
+  }
+}

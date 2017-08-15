@@ -1,0 +1,16 @@
+/* _______________2.4. Сетка___________________ */
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1305px;
+}
+.container__row {
+  margin: 0 -15px;
+}
+.container__col {
+  float: left;
+  padding: 0 15px;
+  width: 50%;
+  min-height: 1px;
+}

@@ -1,0 +1,37 @@
+.button {
+  display: inline-block;
+  padding: 15px 50px 19px;
+  text-align: center;
+  font-weight: 600;
+  font-size: inherit;
+  line-height: 1;
+  font-family: 'Avenir Next Cyr', sans-serif;
+  background: $maincolor;
+  color: $white;
+  border: none;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 20px 43px rgba(178,108,18,.35);
+  -moz-box-shadow: 0 20px 43px rgba(178,108,18,.35);
+  box-shadow: 0 20px 43px rgba(178,108,18,.35);
+  @include transition;
+  &:hover {
+    background: $maincolor_lighter;
+    color: $white;
+  }
+}
+// .button_light {
+//   background: rgba(74, 141, 232, .4);
+//   color: #466184;
+//   -webkit-box-shadow: none;
+//   -moz-box-shadow: none;
+//   box-shadow: none;
+// }
+// .button_light:hover {
+//   background: #298bd6;
+//   color: #fff;
+// }
+.button_wide {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
