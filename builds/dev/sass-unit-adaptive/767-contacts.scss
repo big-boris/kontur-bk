@@ -1,0 +1,46 @@
+.contacts__wrap {
+  position: static;
+  padding: 0;
+}
+.container_contacts {
+  padding-top: 15px;
+  background: none;
+  color: #000;
+}
+.contacts__header {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.contacts__link {
+  color: $black;
+}
+.contacts__link:hover {
+  color: $maincolor;
+}
+.contacts__link_phone {
+  background-image: url('../img/ico/phone_black.png');
+}
+.contacts__link_message {
+  background-image: url('../img/ico/message_black.png');
+}
+
+.contacts__items {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  background: $maincolor;
+  color: $white;
+}
+.contacts__item {
+  padding: 0;
+  width: 100%;
+}
+.address {
+  margin-bottom: 15px;
+}
+.address__title {
+  margin-bottom: 0;
+}
+
+.contacts__map {
+  height: 400px;
+}

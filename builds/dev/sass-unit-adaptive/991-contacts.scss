@@ -1,0 +1,19 @@
+.contacts__header {
+  padding: 15px 30px;
+  width: 100%;
+  border-right: none;
+  border-bottom: $border-gray_thin;
+}
+.contacts__title {
+  padding-top: 0;
+  margin-bottom: 10px;
+}
+.contacts__link {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.contacts__items {
+  padding: 15px 15px 25px;
+  width: 100%;
+}

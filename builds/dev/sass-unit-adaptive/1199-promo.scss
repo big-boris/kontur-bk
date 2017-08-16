@@ -1,0 +1,23 @@
+.promo_inner {
+  .promo__header {
+    width: 24%;
+  }
+  .promo__description {
+    margin-right: 7%;
+    width: 37%;
+  }
+  .promo__action {
+    width: 32%;
+  }
+}
+.promo__header {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.promo__description {
+  margin: 30px 0;
+  padding-bottom: 0;
+}
+.promo__action {
+  margin-bottom: 50px;
+}

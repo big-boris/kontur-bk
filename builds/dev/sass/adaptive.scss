@@ -1,0 +1,229 @@
+@import "../sass-unit/var-mix";
+
+@media (max-width: 1299px) {
+  @import "../sass-unit-adaptive/1299-all";
+}
+
+@media (max-width: 1199px) {
+  @import "../sass-unit-adaptive/1199-header_nav";
+
+  /* ___________4. SECTION (Контент)_____________ */
+  .section__header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @import "../sass-unit-adaptive/1199-promo";
+  
+  @import "../sass-unit-adaptive/1199-scopes";
+  
+  @import "../sass-unit-adaptive/1199-overview";
+
+  .stocks__title {
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .contacts__header {
+    width: 30%;
+  }
+  .contacts__items {
+    width: 70%;
+  }
+
+  @import "../sass-unit-adaptive/1199-price";
+
+  /* ___________5. FOOTER  (Подвал)______________ */
+}
+
+@media (max-width: 1014px) {
+  .nav__item-hidden_md {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  /* ___________2. Типовые элементы______________ */
+  /* _______________2.3. Элементы форм___________ */
+  .form__header {
+    margin-bottom: 30px;
+  }
+  .form__submit {
+    margin-bottom: 10px;
+  }
+
+  /* ___________3. HEADER  (Шапка)_______________ */
+  @import "../sass-unit-adaptive/991-header_nav";
+
+  /* ___________4. SECTION (Контент)_____________ */
+  .section__header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 40px;
+  }
+
+  @import "../sass-unit-adaptive/991-promo";
+
+  @import "../sass-unit-adaptive/991-scopes";
+
+  .overview__header {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 32px;
+  }
+
+  @import "../sass-unit-adaptive/991-price";
+
+  .download__line {
+    padding: 0;
+  }
+  .download__link {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  @import "../sass-unit-adaptive/991-stocks";
+
+  .download {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .download__content {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  .download__header {
+    padding-bottom: 15px;
+  }
+  .download__link {
+    -ms-background-position-y: 10px;
+        background-position-y: 10px;
+  }
+  
+  @import "../sass-unit-adaptive/991-contacts";
+
+  /* ___________5. FOOTER  (Подвал)______________ */
+  @import "../sass-unit-adaptive/991-footer";
+}
+
+@media (max-width: 767px) {
+  /* ___________2. Типовые элементы______________ */
+  /* _______________2.3. Элементы форм___________ */
+  .form {
+    padding: 15px;
+  }
+  .form__submit_politic {
+    padding-right: 0;
+  }
+  .form__politic {
+    position: static;
+    padding-top: 15px;
+    padding-left: 0;
+    width: auto;
+  }
+  /* _______________2.4. Сетка___________________ */
+  .container__col {
+    width: 100%;
+  }
+
+  /* _______________2.5. Базовые_________________ */
+  body {
+    font-size: 100%;
+    line-height: 1.25;
+  }
+
+  .button {
+    -webkit-box-shadow: 0 5px 15px rgba(178,108,18,.35);
+    -moz-box-shadow: 0 5px 15px rgba(178,108,18,.35);
+    box-shadow: 0 5px 15px rgba(178,108,18,.35);
+  }
+  .button_light {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /* ___________3. HEADER  (Шапка)_______________ */
+  @import "../sass-unit-adaptive/767-header_nav";
+
+  /* ___________4. SECTION (Контент)_____________ */
+  @import "../sass-unit-adaptive/767-promo";
+
+  .section_pushed {
+    padding-top: 0;
+  }
+  .section__header {
+    font-size: 30px;
+  }
+
+  @import "../sass-unit-adaptive/767-scopes";
+
+  @import "../sass-unit-adaptive/767-overview";
+  
+  @import "../sass-unit-adaptive/767-price";
+
+  .connect__label {
+    font-size: 21px;
+  }
+  .connect__form {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  @import "../sass-unit-adaptive/767-stocks";
+
+  .clients__items::after {
+    display: none;
+  }
+  .clients__item {
+    border-left: none;
+  }
+
+  @import "../sass-unit-adaptive/767-contacts";
+
+  /* ___________5. FOOTER  (Подвал)______________ */
+  @import "../sass-unit-adaptive/767-footer";
+}
+
+@media (max-width: 568px) {
+  .stock-form_modal {
+    width: 90%;
+  }
+}
+
+@media (max-width: 419px) {
+  /* ___________2. Типовые элементы______________ */
+  /* _______________2.3. Элементы форм___________ */
+  .form__field_2 {
+    width: 100%;
+  }
+
+  /* _______________2.5. Базовые_________________ */
+  .button {
+    padding-bottom: 15px;
+    width: 100%;
+  }
+
+  /* ___________3. HEADER  (Шапка)_______________ */
+  @import "../sass-unit-adaptive/419-header_nav";
+
+  /* ___________4. SECTION (Контент)_____________ */
+  @import "../sass-unit-adaptive/419-promo";
+
+  @import "../sass-unit-adaptive/419-scopes";
+
+  .connect__label {
+    font-weight: 300;
+  }
+  .connect__summary {
+    margin-bottom: 0;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  .stocks__title {
+    font-size: 18px;
+  }
+
+  /* ___________5. FOOTER  (Подвал)______________ */
+}

@@ -1,0 +1,44 @@
+.header {
+  padding-bottom: 0;
+  .container_panel {
+    padding-bottom: 60px;
+  }
+}
+.panel {
+  position: relative;
+}
+.panel__logo {
+  width: 55%;
+}
+
+.panel__nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 6px 0;
+  width: auto;
+  text-align: left;
+  border-top: $border-gray_thin;
+}
+
+.panel__phone {
+  width: 45%;
+}
+
+.panel__logo-footer {
+  width: 50%;
+}
+.panel__nav-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  width: auto;
+  text-align: left;
+  border-top: $border-gray_thin;
+}
+.panel__phone-footer {
+  width: 50%;
+}

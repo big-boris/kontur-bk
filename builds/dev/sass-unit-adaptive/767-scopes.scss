@@ -1,0 +1,31 @@
+.scopes__header {
+  margin-bottom: 15px;
+}
+.scopes__header_second {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.scopes__wrapper {
+  overflow: visible;
+}
+.scopes__item {
+  margin-bottom: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100px;
+}
+.scopes__delimiter {
+  display: none;
+}
+.scopes__ico {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -50px;
+}
+.scopes__text {
+  margin-left: 0;
+  padding-left: 115px;
+  width: 100%;
+  max-width: none;
+}

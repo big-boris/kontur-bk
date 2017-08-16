@@ -1,0 +1,49 @@
+
+  /* ___________3. HEADER  (Шапка)_______________ */
+
+  /* ___________4. SECTION (Контент)_____________ */
+  .promo_inner .promo__header {
+    width: 20%;
+  }
+  .promo_inner .promo__header::before {
+    margin-right: 4px;
+  }
+  .promo_inner .promo__description {
+    margin-right: 25%;
+    width: 30%;
+  }
+
+  .scopes__text {
+    margin-left: 15px;
+    max-width: 250px;
+  }
+
+  .overview {
+    padding: 20px 30px;
+  }
+  .overview__item_odd {
+    .overview__content {
+      width: 53%;
+    }
+    .overview__image {
+      width: 47%;
+    }
+  }
+  .overview__col {
+    padding: 0 30px;
+  }
+  .overview__content {
+    padding-left: 80px;
+  }
+  .clients__items {
+    padding: 0 51px;
+    &::after {
+      left: 50px;
+    }
+  }
+  .owl-nav_clients {
+    right: 0;
+    left: 0;
+  }
+
+  /* ___________5. FOOTER  (Подвал)______________ */

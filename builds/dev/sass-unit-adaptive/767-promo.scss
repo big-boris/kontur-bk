@@ -1,0 +1,38 @@
+.promo {
+  padding-top: 0;
+  padding-bottom: 30px;
+  font-size: 19px;
+  line-height: 1.25;
+}
+.promo_inner {
+  padding-bottom: 0;
+  font-size: 16px;
+  .promo__container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .promo__header {
+    padding-top: 13px;
+    padding-bottom: 10px;
+    width: 160px;
+    font-size: 30px;
+  }
+  .promo__description {
+    float: none;
+    margin-left: 155px;
+    width: auto;
+    max-width: 320px;
+  }
+  .promo__action {
+    padding-top: 15px;
+    width: 100%;
+  }
+}
+.promo__header {
+  padding-top: 25px;
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+.promo__link {
+  max-width: 420px;
+}

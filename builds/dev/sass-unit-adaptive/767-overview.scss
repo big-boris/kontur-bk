@@ -1,0 +1,36 @@
+.overview__container {
+  padding-top: 0;
+  padding-bottom: 45px;
+}
+.overview__item {
+  padding: 20px 0 0;
+}
+.overview__content,
+.overview__image,
+.overview__item_odd .overview__content,
+.overview__item_odd .overview__image {
+  width: 100%;
+}
+.overview__content {
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+.overview__content_right {
+  float: left;
+}
+.overview__header {
+  margin-bottom: 20px;
+  padding-left: 40px;
+  font-size: 26px;
+}
+.overview__number {
+  right: auto;
+  left: 0;
+  margin-right: 0;
+}
+.overview__text p {
+  margin-bottom: 15px;
+}
+.overview__image {
+  padding: 0;
+}
