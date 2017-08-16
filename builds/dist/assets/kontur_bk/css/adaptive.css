@@ -1,0 +1,555 @@
+@charset "UTF-8";
+@media (max-width: 1299px) {
+  /* ___________3. HEADER  (Шапка)_______________ */
+  /* ___________4. SECTION (Контент)_____________ */
+  .promo_inner .promo__header {
+    width: 20%; }
+  .promo_inner .promo__header::before {
+    margin-right: 4px; }
+  .promo_inner .promo__description {
+    margin-right: 25%;
+    width: 30%; }
+  .scopes__text {
+    margin-left: 15px;
+    max-width: 250px; }
+  .overview {
+    padding: 20px 30px; }
+  .overview__item_odd .overview__content {
+    width: 53%; }
+  .overview__item_odd .overview__image {
+    width: 47%; }
+  .overview__col {
+    padding: 0 30px; }
+  .overview__content {
+    padding-left: 80px; }
+  .clients__items {
+    padding: 0 51px; }
+    .clients__items::after {
+      left: 50px; }
+  .owl-nav_clients {
+    right: 0;
+    left: 0; }
+  /* ___________5. FOOTER  (Подвал)______________ */ }
+
+@media (max-width: 1199px) {
+  /* ___________3. HEADER  (Шапка)_______________ */
+  .panel__logo {
+    width: 23%; }
+  .panel__nav {
+    width: 59%; }
+  .nav__link {
+    padding-right: 12px;
+    padding-left: 12px; }
+  .panel__phone {
+    width: 18%; }
+  /* ___________4. SECTION (Контент)_____________ */
+  .section__header {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .promo_inner .promo__header {
+    width: 24%; }
+  .promo_inner .promo__description {
+    margin-right: 7%;
+    width: 37%; }
+  .promo_inner .promo__action {
+    width: 32%; }
+  .promo__header {
+    padding-top: 30px;
+    padding-bottom: 40px; }
+  .promo__description {
+    margin: 30px 0;
+    padding-bottom: 0; }
+  .promo__action {
+    margin-bottom: 50px; }
+  .scopes__header {
+    padding-bottom: 20px; }
+  .scopes__row {
+    margin-bottom: 40px; }
+  .scopes__item {
+    width: 50%; }
+  .scopes__delimiter {
+    display: none; }
+  .scopes__delimiter_md {
+    display: block; }
+  .scopes__text {
+    max-width: 320px; }
+  .scopes__and {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .overview {
+    padding: 30px 0; }
+  .overview__container {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .overview__item {
+    padding: 45px 15px; }
+  .overview__item_odd {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.19);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.19); }
+    .overview__item_odd .overview__content {
+      width: 60%; }
+    .overview__item_odd .overview__image {
+      width: 40%; }
+  .overview__header {
+    margin-bottom: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 36px; }
+  .overview__number {
+    margin-right: 15px; }
+  .overview__col {
+    padding-right: 15px;
+    padding-left: 15px; }
+  .overview__content {
+    padding-bottom: 10px;
+    padding-left: 60px;
+    width: 60%; }
+  .overview__text {
+    padding-bottom: 10px; }
+  .overview__image {
+    width: 40%; }
+  .stocks__title {
+    font-size: 25px;
+    line-height: 34px; }
+  .contacts__header {
+    width: 30%; }
+  .contacts__items {
+    width: 70%; }
+  .price__row {
+    margin: 0 -15px; }
+  .price__col {
+    margin-bottom: 30px;
+    padding: 15px; }
+  .price__select {
+    margin-bottom: 15px; }
+  .price__header {
+    font-size: 22px;
+    line-height: 1.2; }
+  .price__options {
+    padding: 15px 20px; }
+  .price__price {
+    padding: 10px 0 25px; }
+  .price__category {
+    width: 35%; }
+  .price__type-options {
+    width: 65%; }
+  /* ___________5. FOOTER  (Подвал)______________ */ }
+
+@media (max-width: 1014px) {
+  .nav__item-hidden_md {
+    display: none; } }
+
+@media (max-width: 991px) {
+  /* ___________2. Типовые элементы______________ */
+  /* _______________2.3. Элементы форм___________ */
+  .form__header {
+    margin-bottom: 30px; }
+  .form__submit {
+    margin-bottom: 10px; }
+  /* ___________3. HEADER  (Шапка)_______________ */
+  .panel {
+    padding-bottom: 10px; }
+  .panel__logo {
+    width: 30%; }
+  .logo__text {
+    padding-left: 0;
+    border-left: none; }
+  .panel__nav {
+    width: 45%; }
+  .panel__phone {
+    width: 25%; }
+  .phone {
+    line-height: 1.3; }
+  .panel__logo-footer {
+    width: 25%; }
+  .logo__text-footer {
+    display: none; }
+  .panel__nav-footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 50%; }
+  .panel__phone-footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 25%; }
+  /* ___________4. SECTION (Контент)_____________ */
+  .section__header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 40px; }
+  .promo {
+    padding-top: 110px;
+    padding-bottom: 45px; }
+  .promo_inner {
+    padding-bottom: 10px; }
+    .promo_inner .promo__header {
+      padding-top: 3px;
+      width: 29%;
+      font-size: 46px; }
+    .promo_inner .promo__description {
+      margin-right: 0;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      width: 33%; }
+    .promo_inner .promo__action {
+      width: 38%; }
+  .promo__header {
+    padding-top: 20px;
+    padding-bottom: 30px; }
+  .promo__action {
+    margin-bottom: 0; }
+  .scopes__header {
+    padding-bottom: 15px; }
+  .scopes__header_second {
+    font-size: 24px; }
+  .scopes__row {
+    margin-bottom: 20px; }
+  .scopes__text {
+    max-width: 230px; }
+  .overview__header {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 32px; }
+  .price__col {
+    margin: 10px 25%;
+    width: 50%; }
+  .price__category {
+    width: 45%; }
+  .price__type-options {
+    width: 55%; }
+  .download__line {
+    padding: 0; }
+  .download__link {
+    padding-top: 6px;
+    padding-bottom: 6px; }
+  .stocks__image {
+    padding-right: 15px;
+    padding-left: 0;
+    width: 35%; }
+  .stocks__content {
+    width: 65%; }
+  .stocks__title {
+    font-size: 24px;
+    line-height: 1.333333; }
+  .download {
+    margin-bottom: 0;
+    text-align: left; }
+  .download__content {
+    padding-top: 0;
+    padding-bottom: 30px; }
+  .download__header {
+    padding-bottom: 15px; }
+  .download__link {
+    -ms-background-position-y: 10px;
+    background-position-y: 10px; }
+  .contacts__header {
+    padding: 15px 30px;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .contacts__title {
+    padding-top: 0;
+    margin-bottom: 10px; }
+  .contacts__link {
+    display: inline-block;
+    margin-right: 20px; }
+  .contacts__items {
+    padding: 15px 15px 25px;
+    width: 100%; }
+  /* ___________5. FOOTER  (Подвал)______________ */
+  .footer {
+    padding-top: 15px;
+    padding-bottom: 20px; }
+  .footer__nav {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .footer__phone {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .footer__copyright {
+    position: absolute;
+    right: 15px;
+    bottom: -20px; } }
+
+@media (max-width: 767px) {
+  /* ___________2. Типовые элементы______________ */
+  /* _______________2.3. Элементы форм___________ */
+  .form {
+    padding: 15px; }
+  .form__submit_politic {
+    padding-right: 0; }
+  .form__politic {
+    position: static;
+    padding-top: 15px;
+    padding-left: 0;
+    width: auto; }
+  /* _______________2.4. Сетка___________________ */
+  .container__col {
+    width: 100%; }
+  /* _______________2.5. Базовые_________________ */
+  body {
+    font-size: 100%;
+    line-height: 1.25; }
+  .button {
+    -webkit-box-shadow: 0 5px 15px rgba(178, 108, 18, 0.35);
+    box-shadow: 0 5px 15px rgba(178, 108, 18, 0.35); }
+  .button_light {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  /* ___________3. HEADER  (Шапка)_______________ */
+  .header {
+    padding-bottom: 0; }
+    .header .container_panel {
+      padding-bottom: 60px; }
+  .panel {
+    position: relative; }
+  .panel__logo {
+    width: 55%; }
+  .panel__nav {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 6px 0;
+    width: auto;
+    text-align: left;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); }
+  .panel__phone {
+    width: 45%; }
+  .panel__logo-footer {
+    width: 50%; }
+  .panel__nav-footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    width: auto;
+    text-align: left;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); }
+  .panel__phone-footer {
+    width: 50%; }
+  /* ___________4. SECTION (Контент)_____________ */
+  .promo {
+    padding-top: 0;
+    padding-bottom: 30px;
+    font-size: 19px;
+    line-height: 1.25; }
+  .promo_inner {
+    padding-bottom: 0;
+    font-size: 16px; }
+    .promo_inner .promo__container {
+      padding-top: 15px;
+      padding-bottom: 15px; }
+    .promo_inner .promo__header {
+      padding-top: 13px;
+      padding-bottom: 10px;
+      width: 160px;
+      font-size: 30px; }
+    .promo_inner .promo__description {
+      float: none;
+      margin-left: 155px;
+      width: auto;
+      max-width: 320px; }
+    .promo_inner .promo__action {
+      padding-top: 15px;
+      width: 100%; }
+  .promo__header {
+    padding-top: 25px;
+    padding-bottom: 30px;
+    font-size: 40px; }
+  .promo__link {
+    max-width: 420px; }
+  .section_pushed {
+    padding-top: 0; }
+  .section__header {
+    font-size: 30px; }
+  .scopes__header {
+    margin-bottom: 15px; }
+  .scopes__header_second {
+    margin-bottom: 0;
+    font-size: 20px; }
+  .scopes__wrapper {
+    overflow: visible; }
+  .scopes__item {
+    margin-bottom: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100px; }
+  .scopes__delimiter {
+    display: none; }
+  .scopes__ico {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    margin-top: -50px; }
+  .scopes__text {
+    margin-left: 0;
+    padding-left: 115px;
+    width: 100%;
+    max-width: none; }
+  .overview__container {
+    padding-top: 0;
+    padding-bottom: 45px; }
+  .overview__item {
+    padding: 20px 0 0; }
+  .overview__content,
+  .overview__image,
+  .overview__item_odd .overview__content,
+  .overview__item_odd .overview__image {
+    width: 100%; }
+  .overview__content {
+    margin-bottom: 30px;
+    padding-left: 15px; }
+  .overview__content_right {
+    float: left; }
+  .overview__header {
+    margin-bottom: 20px;
+    padding-left: 40px;
+    font-size: 26px; }
+  .overview__number {
+    right: auto;
+    left: 0;
+    margin-right: 0; }
+  .overview__text p {
+    margin-bottom: 15px; }
+  .overview__image {
+    padding: 0; }
+  .price {
+    padding: 0 0 40px; }
+  .price__col {
+    margin: 0; }
+  .price__category {
+    padding-bottom: 20px;
+    padding-left: 15px; }
+  .price__category::before,
+  .rate__content::before {
+    top: 100%;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 1px; }
+  .price__type-options {
+    padding: 15px 15px 0; }
+  .connect__label {
+    font-size: 21px; }
+  .connect__form {
+    margin-bottom: 30px;
+    padding: 0; }
+  .stocks {
+    padding: 40px 0; }
+  .stocks__items {
+    margin: 0 -30px;
+    padding: 0 65px; }
+  .stocks__item {
+    position: relative; }
+  .stocks__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-bottom: 15px;
+    width: 100px; }
+  .stocks__content {
+    display: block;
+    padding: 0;
+    width: auto; }
+  .stocks__label {
+    margin-bottom: 15px;
+    padding: 30px 10px 23px 100px;
+    font-size: 20px; }
+  .clients__items::after {
+    display: none; }
+  .clients__item {
+    border-left: none; }
+  .contacts__wrap {
+    position: static;
+    padding: 0; }
+  .container_contacts {
+    padding-top: 15px;
+    background: none;
+    color: #000; }
+  .contacts__header {
+    padding-right: 15px;
+    padding-left: 15px; }
+  .contacts__link {
+    color: #000000; }
+  .contacts__link:hover {
+    color: #a22fa2; }
+  .contacts__link_phone {
+    background-image: url("../img/ico/phone_black.png"); }
+  .contacts__link_message {
+    background-image: url("../img/ico/message_black.png"); }
+  .contacts__items {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    background: #a22fa2;
+    color: #ffffff; }
+  .contacts__item {
+    padding: 0;
+    width: 100%; }
+  .address {
+    margin-bottom: 15px; }
+  .address__title {
+    margin-bottom: 0; }
+  .contacts__map {
+    height: 400px; }
+  /* ___________5. FOOTER  (Подвал)______________ */
+  .footer .container_panel {
+    padding-top: 60px;
+    padding-bottom: 0; }
+  .footer__nav {
+    top: 0;
+    bottom: auto; } }
+
+@media (max-width: 568px) {
+  .stock-form_modal {
+    width: 90%; } }
+
+@media (max-width: 419px) {
+  /* ___________2. Типовые элементы______________ */
+  /* _______________2.3. Элементы форм___________ */
+  .form__field_2 {
+    width: 100%; }
+  /* _______________2.5. Базовые_________________ */
+  .button {
+    padding-bottom: 15px;
+    width: 100%; }
+  /* ___________3. HEADER  (Шапка)_______________ */
+  .header .container_panel {
+    padding-bottom: 60px; }
+  .logo__text {
+    font-size: 13px; }
+  .nav__link {
+    font-size: 16px; }
+  .phone {
+    font-size: 13px; }
+  .phone__code {
+    font-size: 10px; }
+  /* ___________4. SECTION (Контент)_____________ */
+  .promo {
+    padding-bottom: 15px; }
+  .promo_inner {
+    padding-bottom: 0; }
+  .promo__header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px; }
+  .promo__description {
+    margin-top: 15px;
+    margin-bottom: 20px; }
+  .scopes__item {
+    margin-bottom: 15px; }
+  .scopes__text {
+    font-size: 17px; }
+  .connect__label {
+    font-weight: 300; }
+  .connect__summary {
+    margin-bottom: 0;
+    padding: 20px 0;
+    font-size: 30px; }
+  .stocks__title {
+    font-size: 18px; }
+  /* ___________5. FOOTER  (Подвал)______________ */ }
