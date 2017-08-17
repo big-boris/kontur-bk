@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*$maincolor_hover: #E517E5 #D115D1;*/
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -226,7 +227,7 @@ img {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   .button:hover {
-    background: #E388D4;
+    background: #DE16DE;
     color: #ffffff; }
 
 .button_wide {

@@ -12,7 +12,7 @@
 //   var marker = new google.maps.Marker({
 //     position: myLatlng,
 //     map: map,
-//     icon: '/assets/kontur_elba/img/ico/map-balloon.png'
+//     icon: '/assets/kontur_bk/img/ico/map-balloon.png'
 //   });
 // }
 
@@ -52,25 +52,25 @@ function initialize () {
     position: myLatlngMoscow,
     map: map,
     title: 'Москва, Большой Знаменский пер., 8/12 стр',
-    icon: '/assets/kontur_elba/img/ico/map-balloon.png'
+    icon: '/assets/kontur_bk/img/ico/map-balloon.png'
   });
   var markerNakhabino = new google.maps.Marker({
     position: myLatlng,
     map: map,
     title: 'Нахабино, ул. Институтская, д. 13, к. 1',
-    icon: '/assets/kontur_elba/img/ico/map-balloon.png'
+    icon: '/assets/kontur_bk/img/ico/map-balloon.png'
   });
   var markerIstra = new google.maps.Marker({
     position: myLatlngIstra,
     map: map,
     title: 'Истра, ул. Пролетарская, д. 1, оф. 11',
-    icon: '/assets/kontur_elba/img/ico/map-balloon.png'
+    icon: '/assets/kontur_bk/img/ico/map-balloon.png'
   });
   var markerKrasnogorsk = new google.maps.Marker({
     position: myLatlngKrasnogorsk,
     map: map,
     title: 'Красногорск, ул. Вилора Трифонова, д. 6',
-    icon: '/assets/kontur_elba/img/ico/map-balloon.png'
+    icon: '/assets/kontur_bk/img/ico/map-balloon.png'
   });
   
   // map marker of specialists departures
@@ -78,55 +78,55 @@ function initialize () {
     position: myLatlngSpec1,
     map: map,
     title: 'Выезд специалиста: Москва, б-р Строгинский, 1',
-    icon: 'assets/kontur_elba/img/ico/map-balloon-spec-h43.png'
+    icon: 'assets/kontur_bk/img/ico/map-balloon-spec-h43.png'
   });
   var markerSpec2 = new google.maps.Marker({
     position: myLatlngSpec2,
     map: map,
     title: 'Выезд специалиста: Москва, ул. Тушинская, 17',
-    icon: 'assets/kontur_elba/img/ico/map-balloon-spec-h43.png'
+    icon: 'assets/kontur_bk/img/ico/map-balloon-spec-h43.png'
   });
   var markerSpec3 = new google.maps.Marker({
     position: myLatlngSpec3,
     map: map,
     title: 'Выезд специалиста: Москва, ул. Новопесчаная, 16к1',
-    icon: 'assets/kontur_elba/img/ico/map-balloon-spec-h43.png'
+    icon: 'assets/kontur_bk/img/ico/map-balloon-spec-h43.png'
   });
   var markerSpec4 = new google.maps.Marker({
     position: myLatlngSpec4,
     map: map,
     title: 'Выезд специалиста: Москва, ул. Сходненская, 35к1',
-    icon: 'assets/kontur_elba/img/ico/map-balloon-spec-h43.png'
+    icon: 'assets/kontur_bk/img/ico/map-balloon-spec-h43.png'
   });
   var markerSpec5 = new google.maps.Marker({
     position: myLatlngSpec5,
     map: map,
     title: 'Выезд специалиста: Москва, ул. Рогова, 12к1с1',
-    icon: 'assets/kontur_elba/img/ico/map-balloon-spec-h43.png'
+    icon: 'assets/kontur_bk/img/ico/map-balloon-spec-h43.png'
   });
   var markerSpec6 = new google.maps.Marker({
     position: myLatlngSpec6,
     map: map,
     title: 'Выезд специалиста: Москва, ул. Народного ополчения, 28',
-    icon: 'assets/kontur_elba/img/ico/map-balloon-spec-h43.png'
+    icon: 'assets/kontur_bk/img/ico/map-balloon-spec-h43.png'
   });
   var markerSpec7 = new google.maps.Marker({
     position: myLatlngSpec7,
     map: map,
     title: 'Выезд специалиста: Москва, Кутузовский проспект, 71',
-    icon: 'assets/kontur_elba/img/ico/map-balloon-spec-h43.png'
+    icon: 'assets/kontur_bk/img/ico/map-balloon-spec-h43.png'
   });
   var markerSpec8 = new google.maps.Marker({
     position: myLatlngSpec8,
     map: map,
     title: 'Выезд специалиста: Москва, ул. Матвеевская, 20к3',
-    icon: 'assets/kontur_elba/img/ico/map-balloon-spec-h43.png'
+    icon: 'assets/kontur_bk/img/ico/map-balloon-spec-h43.png'
   });
   var markerSpec9 = new google.maps.Marker({
     position: myLatlngSpec9,
     map: map,
     title: 'Выезд специалиста: Москва, Можайское шоссе, 39',
-    icon: 'assets/kontur_elba/img/ico/map-balloon-spec-h43.png'
+    icon: 'assets/kontur_bk/img/ico/map-balloon-spec-h43.png'
   });
 }
 if(document.getElementById('map') != null) {

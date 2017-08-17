@@ -1,42 +1,52 @@
 
-<!-- Modal Form for Stocks
-#stock-form.stock-form_modal.mfp-hide
-  form.form.js-validate(action="", method="post")
-    .form__header.title Заявка на участие в акции
-    .form__line
-      input(type="text", name="name", placeholder="Ваше имя *", data-req="")
-      span.form__help Обязательно для заполнения
-    .form__line
-      input(type="tel", name="phone", placeholder="Телефон *", data-req="")
-      span.form__help Обязательно для заполнения
-    .form__line
-      input(type="email", name="mail", placeholder="E–mail")
-    input(type="hidden", name="modal_stockname")
-    .form__submit
-      input.button.button_submit.button_wide(type="submit", value="Участвовать")
-// End Modal Form for Stocks
-.stocks
-  .container
-    .stocks__items.js-stocks.owl-carousel
-      .stocks__item
-        .stocks__image.container__col
-          img.stocks__img(src="/assets/kontur_bk/img/stock/stock-bk-gift.png", alt="")
-        .stocks__content.container__col
-          .stocks__label.title АКЦИЯ
-          .stocks__title.title
-            a.stocks__link.js-popup-stocks.js-stockname-transfer(href="#stock-form", data-stockname="Бухгалтерия - Подарок для нового ООО")
-              span.stocks__link-wrap 3 месяца бесплатного использования Бугалтерии!
-          p
-            | Если вы зарегистрировали ООО меньше трёх месяцев назад - пользуйтесь Бухгалтерией три месяца бесплатно.
-        .clear
-      .stocks__item
-        .stocks__image.container__col
-          img.stocks__img(src="/assets/kontur_bk/img/stock/stock-bk-discount.png", alt="Скидка при покупке тарифа на 2 года")
-        .stocks__content.container__col
-          .stocks__label.title АКЦИЯ
-          .stocks__title.title
-            a.stocks__link.js-popup-stocks.js-stockname-transfer(href="#stock-form", data-stockname="Бухгалтерия - Скидка при покупке на 2 года")
-              span.stocks__link-wrap Скидка при покупке Бухгалтерии на 2 года.
-          p Купите тариф в Контур.Бухгалтерии на два года - и получите скидку 15%!
-        .clear
--->
+<!-- Modal Form for Stocks-->
+<div class="stock-form_modal mfp-hide" id="stock-form">
+  <form class="form js-validate" action="" method="post">
+    <div class="form__header title">Заявка на участие в акции</div>
+    <div class="form__line">
+      <div class="form__field">
+        <input type="text" name="name" placeholder="Ваше имя *" data-req=""/><span class="form__help">Обязательно для заполнения</span>
+      </div>
+    </div>
+    <div class="form__line">
+      <div class="form__field">
+        <input type="tel" name="phone" placeholder="Телефон *" data-req=""/><span class="form__help">Обязательно для заполнения</span>
+      </div>
+    </div>
+    <div class="form__line">
+      <div class="form__field">
+        <input type="email" name="mail" placeholder="E–mail"/>
+      </div>
+    </div>
+    <input type="hidden" name="modal_stockname"/>
+    <div class="form__submit">
+      <input class="button button_submit button_wide" type="submit" value="Участвовать"/>
+      <div class="form__politic-notariff">Отправляя заявку, я соглашаюсь на<a href="https://152.kontur.ru/976004382/policy" target="_blank">обработку персональных данных</a>и получение информационных сообщений от компании СКБ Контур.</div>
+    </div>
+  </form>
+</div>
+<!-- End Modal Form for Stocks-->
+<div class="stocks">
+  <div class="container">
+    <div class="stocks__items js-stocks owl-carousel">
+      <div class="stocks__item">
+        <div class="stocks__image container__col"><img class="stocks__img" src="/assets/kontur_bk/img/stock/stock-bk-gift.png" alt=""/></div>
+        <div class="stocks__content container__col">
+          <div class="stocks__label title">АКЦИЯ</div>
+          <div class="stocks__title title"><a class="stocks__link js-popup-stocks js-stockname-transfer" href="#stock-form" data-stockname="Бухгалтерия - Подарок для нового ООО"><span class="stocks__link-wrap">3 месяца бесплатного использования Бугалтерии!</span></a></div>
+          <p>Если вы зарегистрировали ООО меньше трёх месяцев назад - пользуйтесь Бухгалтерией три месяца бесплатно.</p>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="stocks__item">
+        <div class="stocks__image container__col"><img class="stocks__img" src="/assets/kontur_bk/img/stock/stock-bk-discount.png" alt="Скидка при покупке тарифа на 2 года"/></div>
+        <div class="stocks__content container__col">
+          <div class="stocks__label title">АКЦИЯ</div>
+          <div class="stocks__title title"><a class="stocks__link js-popup-stocks js-stockname-transfer" href="#stock-form" data-stockname="Бухгалтерия - Скидка при покупке на 2 года"><span class="stocks__link-wrap">Скидка при покупке Бухгалтерии на 2 года.</span></a></div>
+          <p>Купите тариф в Контур.Бухгалтерии на два года - и получите скидку 15%!</p>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+</div>

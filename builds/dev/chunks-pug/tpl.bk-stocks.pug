@@ -1,40 +1,47 @@
 // Modal Form for Stocks
-  #stock-form.stock-form_modal.mfp-hide
-    form.form.js-validate(action="", method="post")
-      .form__header.title Заявка на участие в акции
-      .form__line
+#stock-form.stock-form_modal.mfp-hide
+  form.form.js-validate(action="", method="post")
+    .form__header.title Заявка на участие в акции
+    .form__line
+      .form__field
         input(type="text", name="name", placeholder="Ваше имя *", data-req="")
         span.form__help Обязательно для заполнения
-      .form__line
+    .form__line
+      .form__field
         input(type="tel", name="phone", placeholder="Телефон *", data-req="")
         span.form__help Обязательно для заполнения
-      .form__line
+    .form__line
+      .form__field
         input(type="email", name="mail", placeholder="E–mail")
-      input(type="hidden", name="modal_stockname")
-      .form__submit
-        input.button.button_submit.button_wide(type="submit", value="Участвовать")
-  // End Modal Form for Stocks
-  .stocks
-    .container
-      .stocks__items.js-stocks.owl-carousel
-        .stocks__item
-          .stocks__image.container__col
-            img.stocks__img(src="/assets/kontur_bk/img/stock/stock-bk-gift.png", alt="")
-          .stocks__content.container__col
-            .stocks__label.title АКЦИЯ
-            .stocks__title.title
-              a.stocks__link.js-popup-stocks.js-stockname-transfer(href="#stock-form", data-stockname="Бухгалтерия - Подарок для нового ООО")
-                span.stocks__link-wrap 3 месяца бесплатного использования Бугалтерии!
-            p
-              | Если вы зарегистрировали ООО меньше трёх месяцев назад - пользуйтесь Бухгалтерией три месяца бесплатно.
-          .clear
-        .stocks__item
-          .stocks__image.container__col
-            img.stocks__img(src="/assets/kontur_bk/img/stock/stock-bk-discount.png", alt="Скидка при покупке тарифа на 2 года")
-          .stocks__content.container__col
-            .stocks__label.title АКЦИЯ
-            .stocks__title.title
-              a.stocks__link.js-popup-stocks.js-stockname-transfer(href="#stock-form", data-stockname="Бухгалтерия - Скидка при покупке на 2 года")
-                span.stocks__link-wrap Скидка при покупке Бухгалтерии на 2 года.
-            p Купите тариф в Контур.Бухгалтерии на два года - и получите скидку 15%!
-          .clear
+    input(type="hidden", name="modal_stockname")
+    .form__submit
+      input.button.button_submit.button_wide(type="submit", value="Участвовать")
+      .form__politic-notariff
+        |Отправляя заявку, я соглашаюсь на
+        a(href="https://152.kontur.ru/976004382/policy", target="_blank") обработку персональных данных
+        | и получение информационных сообщений от компании СКБ Контур.
+// End Modal Form for Stocks
+.stocks
+  .container
+    .stocks__items.js-stocks.owl-carousel
+      .stocks__item
+        .stocks__image.container__col
+          img.stocks__img(src="/assets/kontur_bk/img/stock/stock-bk-gift.png", alt="")
+        .stocks__content.container__col
+          .stocks__label.title АКЦИЯ
+          .stocks__title.title
+            a.stocks__link.js-popup-stocks.js-stockname-transfer(href="#stock-form", data-stockname="Бухгалтерия - Подарок для нового ООО")
+              span.stocks__link-wrap 3 месяца бесплатного использования Бугалтерии!
+          p
+            | Если вы зарегистрировали ООО меньше трёх месяцев назад - пользуйтесь Бухгалтерией три месяца бесплатно.
+        .clear
+      .stocks__item
+        .stocks__image.container__col
+          img.stocks__img(src="/assets/kontur_bk/img/stock/stock-bk-discount.png", alt="Скидка при покупке тарифа на 2 года")
+        .stocks__content.container__col
+          .stocks__label.title АКЦИЯ
+          .stocks__title.title
+            a.stocks__link.js-popup-stocks.js-stockname-transfer(href="#stock-form", data-stockname="Бухгалтерия - Скидка при покупке на 2 года")
+              span.stocks__link-wrap Скидка при покупке Бухгалтерии на 2 года.
+          p Купите тариф в Контур.Бухгалтерии на два года - и получите скидку 15%!
+        .clear

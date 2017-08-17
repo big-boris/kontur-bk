@@ -76,6 +76,7 @@ gulp.task('watch', function() {
 
 gulp.task('default', [
   'fonts',
+  'css',
   'img',
   'js',
   'sass',
