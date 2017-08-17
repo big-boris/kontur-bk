@@ -1,0 +1,49 @@
+.section.section_pushed.connect
+  .container
+    .section__header.title.connect__header Заявка на подключение к Бухгалтерии
+    form.form.form_narrow.connect__form.js-validate(action="", method="post")
+      .form__description Заполните заявку, и наш специалист свяжется с вами в течение рабочего дня.
+      .form__line
+        .form__field
+          input(type="text", name="city", placeholder="Город *", data-req)
+          span.form__help Обязательно для заполнения
+      .form__line
+        .form__field
+          input(type="text", name="name", placeholder="Контактное лицо: *", data-req)
+          span.form__help Обязательно для заполнения
+      .form__line
+        .form__field
+          input(type="email", name="mail", placeholder="Электронная почта *", data-req)
+          span.form__help Обязательно для заполнения
+      .form__line
+        .form__field
+          input(type="tel", name="phone", placeholder="Телефон *", data-req)
+          span.form__help Обязательно для заполнения
+      label.form__field
+        input(type="radio", name="price_1", checked="")
+        | Юридическое лицо
+      label.form__field
+        input(type="radio", name="price_1")
+        | Индивидуальный предприниматель
+      .form__line
+        .form__field
+          input(type="text", name="organization", placeholder="Название организации *", data-req)
+          span.form__help Обязательно для заполнения
+      .form__line
+        .form__field.form__field_2
+          input(type="text", name="inn", placeholder="ИНН *", data-req)
+          span.form__help Обязательно для заполнения
+        .form__field.form__field_2
+          input(type="text", name="kpp", placeholder="КПП", style="border: 1px solid rgba(0,0,0,.11);")
+        .clear
+      .connect__options
+        label.connect__option
+          input(type="checkbox")
+          span.connect__option-text Я веду несколько ИП или ООО
+
+      .form__submit.form__submit_politic
+        input.button.button_submit.button_wide(type="submit", value="Отправить заявку")
+        .form__politic
+          | Отправляя заявку, я соглашаюсь на 
+          a(href="https://kontur.ru/about/policy", target="_blank") обработку персональных данных
+          |  и получение информационных сообщений от компании СКБ Контур.
