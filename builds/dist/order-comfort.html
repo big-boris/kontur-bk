@@ -46,7 +46,7 @@
     </header>
     <div class="section section_pushed connect">
       <div class="container">
-        <div class="section__header title connect__header">Заявка на подключение к Бухгалтерии</div>
+        <div class="section__header title connect__header">Заявка на подключение<br> к Бухгалтерии</div>
         <form class="form form_narrow connect__form js-validate" action="" method="post">
           <div class="form__description">Заполните заявку, и наш специалист свяжется с вами в течение рабочего дня.</div>
           <div class="form__line">
@@ -89,10 +89,39 @@
             </div>
             <div class="clear"></div>
           </div>
+          <div class="connect__tariff connect__label title">Тариф Комфорт 9000 р</div>
           <div class="connect__options">
-            <label class="connect__option">
-              <input type="checkbox"><span class="connect__option-text">Я веду несколько ИП или ООО</span>
+            <div class="connect__label title">Цена за период</div>
+            <label class="connect__option js-calculate-cost">
+              <input type="radio" name="tariff_period" data-period="quarter" data-period-cost="3000"><span class="connect__option-text">Квартал</span>
             </label>
+            <label class="connect__option js-calculate-cost">
+              <input type="radio" name="tariff_period" data-period="year" data-period-cost="9000" checked><span class="connect__option-text">Год</span>
+            </label>
+            <label class="connect__option js-calculate-cost">
+              <input type="radio" name="tariff_period" data-period="2year" data-period-cost="18000"><span class="connect__option-text">2 года</span>
+            </label>
+          </div>
+          <div class="connect__options">
+            <div class="connect__label title">Организаций</div>
+            <label class="connect__option js-calculate-cost">
+              <input type="radio" name="tariff_orgnumber" data-orgnumber="1" data-discount-year="1" data-discount-2year="0,85" checked><span class="connect__option-text">1</span>
+            </label>
+            <label class="connect__option js-calculate-cost">
+              <input type="radio" name="tariff_orgnumber" data-orgnumber="2" data-discount-year="0.65" data-discount-2year="0,5525"><span class="connect__option-text">2</span>
+            </label>
+            <label class="connect__option js-calculate-cost">
+              <input type="radio" name="tariff_orgnumber" data-orgnumber="3" data-discount-year="0.5333333333333333" data-discount-2year="0,4533333333333333"><span class="connect__option-text">3</span>
+            </label>
+            <label class="connect__option js-calculate-cost">
+              <input type="radio" name="tariff_orgnumber" data-orgnumber="4" data-discount-year="0.4625" data-discount-2year="0,393125"><span class="connect__option-text">4</span>
+            </label>
+            <label class="connect__option js-calculate-cost">
+              <input type="radio" name="tariff_orgnumber" data-orgnumber="5" data-discount-year="0.42" data-discount-2year="0,357"><span class="connect__option-text">5</span>
+            </label>
+          </div>
+          <div class="connect__summary title">Итого: <span class="connect__summary-price js-summary-cost">9 000</span>  P
+            <input class="js-connect-summary" type="hidden" name="cost_transfer" value="9000" style="height: 1px; border: none; outline: none; background-color: transparent; color: transparent;">
           </div>
           <div class="form__submit form__submit_politic">
             <input class="button button_submit button_wide" type="submit" value="Отправить заявку">

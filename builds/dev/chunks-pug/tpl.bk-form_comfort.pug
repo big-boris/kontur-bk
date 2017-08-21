@@ -1,6 +1,9 @@
 .section.section_pushed.connect
   .container
-    .section__header.title.connect__header Заявка на подключение к Бухгалтерии
+    .section__header.title.connect__header
+      | Заявка на подключение
+      br
+      |  к Бухгалтерии
     form.form.form_narrow.connect__form.js-validate(action="", method="post")
       .form__description Заполните заявку, и наш специалист свяжется с вами в течение рабочего дня.
       .form__line
@@ -36,10 +39,44 @@
         .form__field.form__field_2
           input(type="text", name="kpp", placeholder="КПП", style="border: 1px solid rgba(0,0,0,.11);")
         .clear
+      
+      .connect__tariff.connect__label.title Тариф Комфорт 9000 р
       .connect__options
-        label.connect__option
-          input(type="checkbox")
-          span.connect__option-text Я веду несколько ИП или ООО
+        .connect__label.title Цена за период
+        label.connect__option.js-calculate-cost
+          input(type="radio", name="tariff_period", data-period="quarter", data-period-cost="3000")
+          span.connect__option-text Квартал
+        label.connect__option.js-calculate-cost
+          input(type="radio", name="tariff_period", data-period="year", data-period-cost="9000", checked)
+          span.connect__option-text Год
+        label.connect__option.js-calculate-cost
+          input(type="radio", name="tariff_period", data-period="2year", data-period-cost="18000")
+          span.connect__option-text 2 года
+      
+      .connect__options
+        .connect__label.title Организаций
+        label.connect__option.js-calculate-cost
+          input(type="radio", name="tariff_orgnumber", data-orgnumber="1" data-discount-year="1" data-discount-2year="0,85", checked)
+          span.connect__option-text 1
+        label.connect__option.js-calculate-cost
+          input(type="radio", name="tariff_orgnumber", data-orgnumber="2" data-discount-year="0.65" data-discount-2year="0,5525")
+          span.connect__option-text 2
+        label.connect__option.js-calculate-cost
+          input(type="radio", name="tariff_orgnumber", data-orgnumber="3" data-discount-year="0.5333333333333333" data-discount-2year="0,4533333333333333")
+          span.connect__option-text 3
+        label.connect__option.js-calculate-cost
+          input(type="radio", name="tariff_orgnumber", data-orgnumber="4" data-discount-year="0.4625" data-discount-2year="0,393125")
+          span.connect__option-text 4
+        label.connect__option.js-calculate-cost
+          input(type="radio", name="tariff_orgnumber", data-orgnumber="5" data-discount-year="0.42" data-discount-2year="0,357")
+          span.connect__option-text 5
+      
+      .connect__summary.title
+        | Итого: 
+        span.connect__summary-price.js-summary-cost 9 000
+        |   P
+        //- span.connect__summary-year  в год
+        input.js-connect-summary(type="hidden", name="cost_transfer", value="9000" style="height: 1px; border: none; outline: none; background-color: transparent; color: transparent;")
 
       .form__submit.form__submit_politic
         input.button.button_submit.button_wide(type="submit", value="Отправить заявку")
