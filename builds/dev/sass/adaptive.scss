@@ -84,22 +84,6 @@
 
   @import "../sass-unit-adaptive/991-stocks";
 
-  .download {
-    margin-bottom: 0;
-    text-align: left;
-  }
-  .download__content {
-    padding-top: 0;
-    padding-bottom: 30px;
-  }
-  .download__header {
-    padding-bottom: 15px;
-  }
-  .download__link {
-    -ms-background-position-y: 10px;
-        background-position-y: 10px;
-  }
-  
   @import "../sass-unit-adaptive/991-contacts";
 
   /* ___________5. FOOTER  (Подвал)______________ */
@@ -161,6 +145,22 @@
   @import "../sass-unit-adaptive/767-overview";
   
   @import "../sass-unit-adaptive/767-price";
+
+  .download {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .download__content {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  .download__header {
+    padding-bottom: 15px;
+  }
+  .download__link {
+    -ms-background-position-y: 10px;
+        background-position-y: 10px;
+  }
 
   .connect__label {
     font-size: 21px;

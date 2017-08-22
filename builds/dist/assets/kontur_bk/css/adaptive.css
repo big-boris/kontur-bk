@@ -234,17 +234,6 @@
   .stocks__title {
     font-size: 24px;
     line-height: 1.333333; }
-  .download {
-    margin-bottom: 0;
-    text-align: left; }
-  .download__content {
-    padding-top: 0;
-    padding-bottom: 30px; }
-  .download__header {
-    padding-bottom: 15px; }
-  .download__link {
-    -ms-background-position-y: 10px;
-    background-position-y: 10px; }
   .contacts__header {
     padding: 15px 30px;
     width: 100%;
@@ -434,6 +423,17 @@
     height: 1px; }
   .price__type-options {
     padding: 15px 15px 0; }
+  .download {
+    margin-bottom: 0;
+    text-align: left; }
+  .download__content {
+    padding-top: 0;
+    padding-bottom: 30px; }
+  .download__header {
+    padding-bottom: 15px; }
+  .download__link {
+    -ms-background-position-y: 10px;
+    background-position-y: 10px; }
   .connect__label {
     font-size: 21px; }
   .connect__form {

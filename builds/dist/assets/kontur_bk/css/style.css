@@ -208,6 +208,9 @@ img {
   line-height: 1;
   font-family: 'DINPro', sans-serif; }
 
+.text-center {
+  text-align: center; }
+
 .button {
   display: inline-block;
   padding: 15px 50px 19px;
@@ -796,8 +799,8 @@ img {
     box-shadow: 0 49px 57px rgba(0, 0, 0, 0.53); }
 
 .price__header {
-  margin-bottom: 25px;
-  padding: 7px 0;
+  padding: 7px 0 25px;
+  border-bottom: 3px solid #a22fa2;
   text-align: center;
   font-size: 27px;
   line-height: 33px; }
@@ -805,28 +808,47 @@ img {
 .price__options {
   margin: 0 -20px;
   padding: 16px 60px 23px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  border-right: none;
-  border-left: none;
   font-size: 18px;
   line-height: 26px; }
 
 .price__line {
   display: block;
-  padding: 5px 0;
-  cursor: pointer; }
+  padding: 5px 0; }
 
 .price__line_disabled {
   color: #ababab; }
 
 .price__options-desc {
+  position: relative;
   display: inline-block;
-  margin-left: 28px;
+  margin-left: 18px;
+  margin-bottom: 10px;
   vertical-align: top;
-  font-size: 15px; }
+  font-size: 15px;
+  line-height: 1.4; }
+
+.price__options-markerplus::before {
+  content: '+';
+  position: absolute;
+  top: 0;
+  left: -15px;
+  font-weight: 600;
+  color: #a22fa2;
+  font-family: Arial; }
+
+.price__options-markerminus::before {
+  content: '–';
+  position: absolute;
+  top: -3px;
+  left: -15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #a22fa2;
+  font-family: Arial; }
 
 .price__quarter {
-  padding: 32px 0 14px;
+  padding: 32px 0 8px;
+  border-top: 3px solid #a22fa2;
   text-align: center;
   font-size: 22px;
   line-height: 1; }
@@ -864,6 +886,32 @@ img {
   padding-left: 30px;
   padding-bottom: 5px;
   font-size: 18px; }
+
+.download {
+  margin-bottom: 15px;
+  text-align: center; }
+
+.download__content {
+  padding-top: 5px;
+  padding-bottom: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: none;
+  border-left: none; }
+
+.download__header {
+  padding: 30px 0;
+  font-size: 27px; }
+
+.download__line {
+  padding: 3px 0;
+  font-size: 0; }
+
+.download__link {
+  display: inline-block;
+  padding: 3px;
+  padding-left: 30px;
+  font-size: 17px;
+  background: url("../img/ico/download.png") 0 50% no-repeat; }
 
 .connect__header {
   opacity: 0;

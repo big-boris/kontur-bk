@@ -128,6 +128,33 @@ $(function () {
   }
   priceFix();
 
+  // выравнивание высоты прайса
+  function priceFix2 () {
+    $('.js-price-fix2').height('auto');
+
+    if(window.innerWidth >= 992) {
+      var maxHprice = [ 0, 0];
+      $('.js-price-fix2').each(function () {
+        var h = $(this).outerHeight(),
+          i = 0;
+        if($(this).hasClass('price__options')) {
+          i = 1;
+        }
+        if(h > maxHprice[i]) {
+          maxHprice[i] = h;
+        }
+      });
+      $('.js-price-fix2').each(function () {
+        var i = 0;
+        if($(this).hasClass('price__options')) {
+          i = 1;
+        }
+        $(this).outerHeight(maxHprice[i]);
+      });
+    }
+  }
+  priceFix2();
+
   $(window).resize(function () {
     contactsFix();
   });

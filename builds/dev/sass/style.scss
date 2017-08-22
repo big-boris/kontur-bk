@@ -42,6 +42,7 @@ img {
   line-height: 1;
   font-family: 'DINPro', sans-serif;
 }
+.text-center {text-align: center;}
 
 @import "../sass-unit/button";
 
@@ -72,6 +73,8 @@ img {
 @import "../sass-unit/stocks";
 
 @import "../sass-unit/price";
+
+@import "../sass-unit/download";
 
 @import "../sass-unit/connect-form";
 
