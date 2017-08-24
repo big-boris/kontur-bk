@@ -167,6 +167,13 @@ $(function () {
       showCloseBtn: false,
       removalDelay: 300,
   });
+  //==== Передача названия акции в скрытый инпут модального окна
+  $(".js-stockname-transfer").click(function() {
+    var modal_stockfrm = $('#stock-form');
+    var stockname_input = modal_stockfrm.find('input[name=modal_stockname]');
+    stockname_input.val( $(this).attr('data-stockname') );
+    // console.log(stockname_input.val() );
+  });
 
   // слайдер акций
   //             - главная

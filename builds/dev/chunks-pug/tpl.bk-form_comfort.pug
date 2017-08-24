@@ -23,10 +23,10 @@
           input(type="tel", name="phone", placeholder="Телефон *", data-req)
           span.form__help Обязательно для заполнения
       label.form__field
-        input(type="radio", name="orgtype", checked="")
+        input(type="radio", name="orgtype", value="Юридическое лицо", checked="")
         | Юридическое лицо
       label.form__field
-        input(type="radio", name="orgtype")
+        input(type="radio", name="orgtype", value="Индивидуальный предприниматель")
         | Индивидуальный предприниматель
       .form__line
         .form__field
@@ -40,35 +40,35 @@
           input(type="text", name="kpp", placeholder="КПП", style="border: 1px solid rgba(0,0,0,.11);")
         .clear
       
-      .connect__tariff.connect__label.title Тариф Комфорт 9000 р
+      .connect__tariff.connect__label.title Тариф Комфорт
       .connect__options
         .connect__label.title Цена за период
         label.connect__option.js-calculate-cost
-          input(type="radio", name="tariff_period", data-period="quarter", data-period-cost="3000")
+          input(type="radio", name="tariff_period", value="Квартал", data-period="quarter", data-period-cost="3000")
           span.connect__option-text Квартал
         label.connect__option.js-calculate-cost
-          input(type="radio", name="tariff_period", data-period="year", data-period-cost="9000", checked)
+          input(type="radio", name="tariff_period", value="Год", data-period="year", data-period-cost="9000", checked)
           span.connect__option-text Год
         label.connect__option.js-calculate-cost
-          input(type="radio", name="tariff_period", data-period="2year", data-period-cost="18000")
+          input(type="radio", name="tariff_period", value="2 года", data-period="2year", data-period-cost="18000")
           span.connect__option-text 2 года
       
       .connect__options
         .connect__label.title Организаций
         label.connect__option.js-calculate-cost
-          input(type="radio", name="tariff_orgnumber", data-orgnumber="1" data-discount-year="1" data-discount-2year="0,85", checked)
+          input(type="radio", name="tariff_orgnumber", value="1" data-orgnumber="1" data-discount-year="1" data-discount-2year="0,85", checked)
           span.connect__option-text 1
         label.connect__option.js-calculate-cost
-          input(type="radio", name="tariff_orgnumber", data-orgnumber="2" data-discount-year="0,65" data-discount-2year="0,5525")
+          input(type="radio", name="tariff_orgnumber", value="2" data-orgnumber="2" data-discount-year="0,65" data-discount-2year="0,5525")
           span.connect__option-text 2
         label.connect__option.js-calculate-cost
-          input(type="radio", name="tariff_orgnumber", data-orgnumber="3" data-discount-year="0,5333333333333333" data-discount-2year="0,4533333333333333")
+          input(type="radio", name="tariff_orgnumber", value="3" data-orgnumber="3" data-discount-year="0,5333333333333333" data-discount-2year="0,4533333333333333")
           span.connect__option-text 3
         label.connect__option.js-calculate-cost
-          input(type="radio", name="tariff_orgnumber", data-orgnumber="4" data-discount-year="0,4625" data-discount-2year="0,393125")
+          input(type="radio", name="tariff_orgnumber", value="4" data-orgnumber="4" data-discount-year="0,4625" data-discount-2year="0,393125")
           span.connect__option-text 4
         label.connect__option.js-calculate-cost
-          input(type="radio", name="tariff_orgnumber", data-orgnumber="5" data-discount-year="0,42" data-discount-2year="0,357")
+          input(type="radio", name="tariff_orgnumber", value="5" data-orgnumber="5" data-discount-year="0,42" data-discount-2year="0,357")
           span.connect__option-text 5
       
       .connect__summary.title
@@ -76,11 +76,11 @@
         span.connect__summary-price.js-summary-cost 9 000
         |   P
         //- span.connect__summary-year  в год
-        input.js-connect-summary(type="hidden", name="cost_transfer", value="9000" style="height: 1px; border: none; outline: none; background-color: transparent; color: transparent;")
+        input(type="hidden", name="cost_transfer", value="9000" style="height: 1px; border: none; outline: none; background-color: transparent; color: transparent;")
 
       .form__submit.form__submit_politic
-        input.button.button_submit.button_wide(type="submit", value="Отправить заявку")
+        input.button.button_submit.button_wide(type="submit", name="connect__form-sbm", value="Отправить заявку")
         .form__politic
-          | Отправляя заявку, я соглашаюсь на 
+          | Отправляя заявку, я соглашаюсь на   
           a(href="https://kontur.ru/about/policy", target="_blank") обработку персональных данных
           |  и получение информационных сообщений от компании СКБ Контур.
